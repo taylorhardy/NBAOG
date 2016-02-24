@@ -1,0 +1,57 @@
+
+    <div class="row">
+        <div class="col-lg-6 col-lg-offset-5">
+            <h3>U.S. and World Missions</h3>
+            </div>
+            <div class="col-lg-8 col-lg-offset-2" >
+                <blockquote>Before being taken up into heaven, Jesus gave a wonderful challenge to His disciples called
+                    the Great Commission. It was an instruction to "go into all the world and preach the good news of
+                    Salvation to everyone, everywhere" (Mark 16:15). We continue to follow that instruction by sending
+                    and funding missionaries all over the world as they teach other cultures about the gift of salvation
+                    through Christ</blockquote>
+             </div>
+        <div class="col-lg-3 col-lg-offset-2">
+            <center><h3>Our Mission</h3></center>
+            <blockquote>Assemblies of God World Missions is dedicated to the fulfillment of the Great Commission through
+                a fourfold strategy of reaching, planting, training and touching.</blockquote>
+        </div>
+        <div class="col-lg-3">
+            <center><h3>Reaching</h3></center>
+            <blockquote>We are proclaiming the message of Jesus Christ to the spiritually lost through every available
+                means. Our early leaders, though small in number, believed Jesus' command to reach the whole world and
+                His promise of the Holy Spirit's power to do it.</blockquote>
+        </div>
+        <div class="col-lg-3">
+            <center><h3>Evangelism</h3></center>
+            <blockquote>Penetrating the darkness with the light of the gospel has always been the leading thrust of our
+                mission.</blockquote>
+        </div>
+                <div class="col-lg-6 col-lg-offset-3
+                " ng-init="missions = [
+                {name: 'Caldwell, Mike and Debbie', email: 'mike.caldwell@agmd.org', link: 'https://secure1.ag.org/contributions/detail.cfm?LedgerID=69915c94-cc42-4760-bbde-f93ca44da33f'},
+                {name: 'Droll, Ruth', email: 'ruthdroll@usmissions.org', link: 'https://secure1.ag.org/contributions/detail.cfm?LedgerID=a75b0d7c-5208-45c6-9d0d-4fe1cf23bc11'},
+                {name: 'Fitzgerald, Mark and Nancy', email: 'markfitzgerald@usmissions.org', website: 'www.okspanishministries.com', link: 'https://secure1.ag.org/contributions/detail.cfm?LedgerID=ac1dd42b-bf70-44d3-ba3e-57533487fd28'},
+                {name: 'Ford, Kirk and Karla', email: 'kirk.ford@agmd.org', website: 'www.siberianfords.org', link: 'https://secure1.ag.org/contributions/detail.cfm?LedgerID=53a7e544-a9df-4b5c-bc30-5796319a3308'},
+                {name: 'Hammond, Duane and Faye', email: 'duanehammond@usmissions.org', website: 'www.newcombag.org', link: 'https://secure1.ag.org/contributions/detail.cfm?LedgerID=73fceef3-3222-498c-ad4a-0ffdbe9121b1'},
+                {name: 'Heaston, Ted and Carolyn', email: 'ted.heaston@agmd.org', link: 'https://secure1.ag.org/contributions/detail.cfm?LedgerID=a0c02e2d-dac1-4fb2-b0f3-97f0bda7b8a5'},
+                {name: 'Kuert, Bill and Barbara', email: 'bill.kuert@agmd.org', link: 'https://secure1.ag.org/contributions/detail.cfm?LedgerID=5189c93b-6dae-46d7-ba15-c1b423d97f72'},
+                {name: 'Lemons, Jim and Cynthia', email: 'jim.lemons@agmd.org', link: 'https://secure1.ag.org/contributions/detail.cfm?LedgerID=bc0382d6-9bea-4a32-aa24-26bc6692f854'},
+                {name: 'Lemos, Mark and Helba', email: 'mark.lemos@agmd.org', link: 'https://secure1.ag.org/contributions/detail.cfm?LedgerID=2f19ee92-6b5f-4cf6-ad3a-301d81123dee'},
+                {name: 'McNeill, Larry and Dee', email: 'bill.shaw@agmd.org', website: 'www.talkingdrumsafrica.org', link: 'https://secure1.ag.org/contributions/detail.cfm?LedgerID=2670d589-f473-4e84-b0dc-347cb0eb6c09'},
+                {name: 'Smalling, Grady and Janet', email: 'grady.smalling@agmd.org', link: 'https://secure1.ag.org/contributions/detail.cfm?LedgerID=1ec956e0-76b0-4cb3-a511-dffecf8b9b0f'},
+                {name: 'Smock, Jason and Elizabeth', email: 'jason.smock@agmd.org', link: 'https://secure1.ag.org/contributions/detail.cfm?LedgerID=b684d0d5-2ce9-47ab-ada5-e10219033cff'},
+                {name: 'Swafford, David and Shirley', email: 'david.swafford@agmd.org', website: 'davidswafford.org', link: 'https://secure1.ag.org/contributions/detail.cfm?LedgerID=8febd889-45e9-43a0-a3a5-0f3a4cb31c8e'},
+                {name: 'Williamson, John and Sharon', email: 'johnwilliamson@usmissions.org', website: 'athletesinternationaldallas.com', link: 'https://secure1.ag.org/contributions/detail.cfm?LedgerID=8e68037b-56c5-426f-800d-91a75bc10a58'}
+                ]">
+                    <div ng-repeat="mission in missions">
+                    <li>{{mission.name}}</li>
+                    <ul>
+                        <li>{{mission.email}}</li>
+                        <li><a href="">{{mission.website}}</a></li>
+                        <li><a href="">{{mission.link}}</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

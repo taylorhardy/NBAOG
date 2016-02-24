@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--bootstrap, font awesome and custom stylesheets -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/stylesheets/stylesheet.css"/>
+    <link rel="stylesheet" href="/stylesheets/socialButtons.css"/>
+    <!-- Latest compiled and minified JavaScript bootstrap and jquery libraries -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script>
+
+        function init_map() {
+            var var_location = new google.maps.LatLng(36.002367, -95.697355);
+
+            var var_mapoptions = {
+                center: var_location,
+                zoom: 14
+            };
+
+            var var_marker = new google.maps.Marker({
+                position: var_location,
+                map: var_map,
+                title:"New Bethel Assembly of God"});
+
+            var var_map = new google.maps.Map(document.getElementById("map-container"),
+                    var_mapoptions);
+
+            var_marker.setMap(var_map);
+
+        }
+
+        google.maps.event.addDomListener(window, 'load', init_map);
+
+    </script>
+
+    <title>New Bethel Assembly of God</title>
+
+    <style>
+        #map-container {
+            height: 400px;
+            width: 99%;
+        }
+        .container{
+
+        }
+    </style>
+</head>
+<body>
+<!--Top nav bar-->
+<%-include nav.ejs  %>
+<!--end top nav bar-->
+<!--main body-->
+<br/>
+<br/>
+<div class="wrapper">
+
+        <div class="row">
+        <div id="map-container" class="col-md-12">
+        </div>
+            <center><h2><u>Contact Info</u></h2></center>
+            <br/>
+            <div class="col-md-3 col-md-offset-1">
+                <p><b>Physical Address:</b> 24918 E. 111th St.<br/>
+                    Broken Arrow, Ok. 74014
+                    *Mail is not received at this address</p>
+                </div>
+            <div class="col-md-2 col-md-offset-1">
+                <div class="container">
+                    <p><b>Mailing Address:</b> PO Box 809<br/>
+                        Broken Arrow, Ok. 74013<br/>
+                        Telephone: 486-4059</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-md-offset-2">
+                    <p><b>Electronically:</b> Email us at pastordan@nbaog.org<br/>
+                    Also reach us on <a href="https://www.facebook.com/pages/New-Bethel-Assembly-of-God/116195988408526"
+                                        target="_blank">Facebook</a></p>
+                    </div
+            </div>
+    </div>
+</div>
+<!--end main body-->
+<!--footer-->
+<%-include footer.ejs%>
+<!--footer end-->
+</body>
+</html>

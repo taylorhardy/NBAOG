@@ -1,0 +1,113 @@
+html, body {
+    height: 100%;
+}
+
+/* give the wrapper a padding-bottom and negative margin-bottom equal to the footer height */
+
+.wrapper {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -100px;
+    padding-bottom: 100px;
+}
+.footer {
+    height: 100px;
+}
+h2{
+    margin: 0;
+    color: #666;
+    padding-top: 90px;
+    font-size: 52px;
+    font-family: "trebuchet ms", sans-serif;
+}
+.item{
+    background: #333;
+    text-align: center;
+    height: 300px !important;
+}
+.carousel{
+    margin-top: 20px;
+}
+.bs-example{
+    margin: 20px;
+}
+#footer
+{
+    background: #252525;
+}
+#footer, #footer p
+{
+    color: #646464;
+}
+#footer h6
+{
+    color: #646464;
+}
+#footer a
+{
+    color: #646464;
+}
+#footer .widget ul li, #footer .widget_categories ul, #footer .widget_archive ul, #footer .widget_nav_menu ul, #footer .widget_recent_comments ul, #footer .widget_meta ul, #footer .widget_recent_entries ul, #footer .widget_product_categories ul
+{
+    border-color: #333333;
+}
+h6 {
+    font-size:17px;
+    line-height:14px;
+}
+.service p {
+    font-size: 12px;
+    line-height:20px !important;
+}
+#logo{
+
+    width: 60px;
+    height: 60px;
+    overflow: visible;
+
+}
+body{
+    padding-top: 45px;
+}
+#sunday{
+    margin-top: -65px;
+}
+#wednesday{
+    margin-top: -65px;
+}
+#logo2{
+    width: 100%;
+    height: 300px;
+}
+.item{
+    background: black;
+    width: 100%;
+}
+.carousel{
+    height: 400px;
+    background: black;
+}
+.carousel-caption{
+    padding-top: 100px;
+}
+#section1{
+    width: 50%;
+    margin-left: 45%;
+}
+#section2{
+    width: 50%;
+    margin-right: 50%;
+}
+#img1{
+    position: absolute;
+    top: 35%;
+    left: 20%;
+}
+#img2{
+    position: absolute;
+    top: 120%;
+    right: 23%;
+}
+.wrapper{
+    padding-top: 25px;
+}
